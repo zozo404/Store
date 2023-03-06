@@ -9,7 +9,7 @@
 <script>
 
 export default {
-  async asyncData($commerce) {
+  async asyncData({ $commerce }) {
     const { data: categories } = await $commerce.categories.list();
 
     return {

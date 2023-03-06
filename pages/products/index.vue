@@ -10,7 +10,7 @@
 ;
 
 export default {
-  async asyncData($commerce) {
+  async asyncData({ $commerce }) {
     const { data: products } = await $commerce.products.list();
 
     return {
