@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- add product's image -->
-    <p>{{ product.name }}: {{ product.price.formatted_with_symbol }}</p>
+    <p>{{ product.name }}: {{ product.price.formatted}} €</p>
   </div>
 </template>
 
