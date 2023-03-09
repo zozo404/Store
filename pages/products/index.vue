@@ -6,10 +6,10 @@
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 cursor-pointer"
     >
-      <a
+      <nuxt-link
         v-for="product in products"
         :key="product.id"
-        :href="'/products/' + product.permalink"
+        :to="`/products/${product.permalink}`"
       >
         <div
           class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
@@ -24,7 +24,7 @@
             <div v-html="product.description"></div>
           </div>
         </div>
-      </a>
+      </nuxt-link>
     </div>
   </div>
 </template>
