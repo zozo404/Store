@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Return />
     <h1>{{ category.name }}</h1>
 
     <product-list :products="products"></product-list>
