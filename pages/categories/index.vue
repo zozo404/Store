@@ -19,7 +19,7 @@
             :src="category.imageUrl"
             alt="Category image"
           />
-          <div class="category-card-content p-4">
+          <div class="p-4">
             <h2 class="text-xl font-bold mb-2">{{ category.name }}</h2>
             <p class="text-gray-700">{{ category.description }}</p>
           </div>
